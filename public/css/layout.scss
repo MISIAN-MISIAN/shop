@@ -1,0 +1,22 @@
+.header{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+  background-color: ;
+  .header-top{
+    padding: 10px 20px;
+    background-color: white;
+
+  }
+  .menus{
+    display: inline-block;
+    .title{
+      font-family: 'Times New Roman', serif;
+      font-size: 28px;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+  }
+}
