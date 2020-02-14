@@ -12,10 +12,10 @@
     <div class="nav">
       <h2 class="popularity-category">カテゴリー</h2>
       <div class="categories">
-        <a class="women button" href="#women">レディース</a>
-        <a class="men button" href="#men">メンズ</a>
-        <a class="appliance button" href="#appliance">家電・スマホ・カメラ</a>
-        <a class="toy button" href="#toy">おもちゃ・ホビー・グッズ</a>
+        <a class="women button" href="#women">トップス</a>
+        <a class="men button" href="#men">パンツ</a>
+        <a class="appliance button" href="#appliance">シューズ</a>
+        <a class="toy button" href="#toy">その他(小物.アクセサリーetc)</a>
       </div>
     </div>
     <div class="items-holders" >
