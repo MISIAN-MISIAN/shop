@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>shop</title>
-  <!-- <link rel="stylesheet" href="/css/reset.scss"> -->
-  <link rel="stylesheet" href="/css/index.scss">
-  <link rel="stylesheet" href="/css/layout.scss">
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <!-- Styles -->
+
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
   <header>
     <div class="header-top">
