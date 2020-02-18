@@ -72,7 +72,7 @@
             display: block;
           }
           a {
-            color: $blue;
+            color: blue;
           }
           a:hover {
             opacity: 0.7;
@@ -101,7 +101,7 @@
       display: block;
       margin-top: 16px;
       background-color: red;
-      color: $white;
+      color: white;
       text-align: center;
       line-height: 50px;
       font-size: 20px;
@@ -144,7 +144,7 @@
         padding-top: 5px;
       }
       .item-detail-button-right a {
-        color:$blue;
+        color:blue;
       }
       .item-detail-button-right a:hover {
         opacity: 0.7;
@@ -186,7 +186,7 @@
         font-size: 14px;
         margin-top: 8px;
         background-color: #aaa;
-        color: $white;
+        color: white;
         text-align: center;
         cursor: pointer;
         outline: 0;
@@ -204,14 +204,14 @@
     }
   }
   .item-links a {
-    color: $blue;
+    color: blue;
   }
   .item-links a:hover {
     opacity: 0.7;
     text-decoration: underline;
   }
   .social-media-links {
-    background-color: $white;
+    background-color: white;
     width: 690px;
     margin: 24px auto;
     padding: 32px 0;
@@ -239,7 +239,7 @@
       font-size: 22px;
       margin: 24px 0 8px;
       font-weight: bold;
-      color: $blue;
+      color: blue;
     }
     .item-box-head:hover {
       opacity: 0.7;
