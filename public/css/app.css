@@ -132,7 +132,7 @@ legend {
   color: #000;
 }
 
-.header {
+header {
   z-index: 1;
   position: fixed;
   top: 0;
@@ -140,16 +140,16 @@ legend {
   width: 100vw;
 }
 
-.header .header-top {
+header .header-top {
   padding: 10px 20px;
   background-color: white;
 }
 
-.header .menus {
+header .menus {
   display: inline-block;
 }
 
-.header .menus .title {
+header .menus .title {
   font-family: "Times New Roman", serif;
   font-size: 28px;
   padding: 10px 20px;
