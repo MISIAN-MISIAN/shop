@@ -1,0 +1,705 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+  /*to enable resizing for IE*/
+}
+
+/*because legend doesn't inherit in IE */
+
+legend {
+  color: #000;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+}
+
+header .header-top {
+  padding: 10px 20px;
+  background-color: white;
+}
+
+header .menus {
+  display: inline-block;
+}
+
+header .menus .title {
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+body {
+  background-color: whitesmoke;
+  display: block;
+}
+
+.main-top {
+  width: 100%;
+}
+
+.advertisements {
+  max-width: 1440px;
+  height: 390px;
+}
+
+.advertisement-box {
+  max-width: 1440px;
+  height: 390px;
+  position: absolute;
+}
+
+.advertisement-box .icon-icon-two {
+  display: flex;
+}
+
+.advertisement-box .icon-icon-two .apple-one {
+  position: relative;
+  bottom: 150px;
+  left: 560px;
+}
+
+.advertisement-box .icon-icon-two .google-one {
+  position: relative;
+  bottom: 150px;
+  left: 570px;
+}
+
+.scroll-advertisement {
+  background-size: cover;
+  width: 1440px;
+  height: 390px;
+}
+
+.nav {
+  padding: 50px 0px 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.popularity-category {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-family: Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+}
+
+.categories {
+  display: inline-block;
+}
+
+.button {
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+  margin: 10px 0 0 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.items-holders {
+  width: 1020px;
+  margin: 0 auto;
+  padding-top: 42px;
+  padding-bottom: 100px;
+  background-color: whitesmoke;
+}
+
+.item-title {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.item-title-men {
+  margin-top: 80px;
+}
+
+.item-title-appliance {
+  margin-top: 80px;
+}
+
+.item-title-toy {
+  margin-top: 80px;
+}
+
+.item-title-louisvuitton {
+  margin-top: 80px;
+}
+
+.item-title-supreme {
+  margin-top: 80px;
+}
+
+.item-title-nike {
+  margin-top: 80px;
+}
+
+.see-more {
+  display: inline-block;
+  position: absolute;
+  color: blue;
+  font-weight: 600;
+  right: 0px;
+  bottom: 0px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.image {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 20%;
+}
+
+.product {
+  width: 188px;
+  height: 252px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.product-image {
+  display: block;
+  position: absolute;
+  width: 188px;
+  height: 252px;
+  box-sizing: content-box;
+}
+
+.product-image:hover {
+  border: solid 1px blue;
+}
+
+.product-card {
+  width: 188px;
+  height: 252px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.product-price {
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0 14px 14px 0;
+  position: absolute;
+  color: white;
+  height: 28px;
+  font-size: 17px;
+  bottom: 72px;
+  padding: 0 12px;
+  letter-spacing: 0.02em;
+}
+
+.product-image-size {
+  width: 188px;
+  height: 188px;
+}
+
+.product-description {
+  display: inline-block;
+  width: 188px;
+  height: 64px;
+  background-color: white;
+  color: #222;
+  box-sizing: border-box;
+  padding: 0 12px;
+  word-break: break-word;
+  font-size: 14px;
+  white-space: normal;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  overflow: hidden;
+}
+
+.item-detail {
+  background-color: #fafafa;
+  padding: 40px 0;
+}
+
+.item-detail a {
+  text-decoration: none;
+}
+
+.item-detail ul {
+  list-style: none;
+}
+
+.item-detail li {
+  display: inline-block;
+}
+
+.item-detail .item-detail-contents {
+  background-color: white;
+  width: 610px;
+  margin: 0 auto 0;
+  padding: 24px 15px 15px;
+}
+
+.item-detail .item-detail-contents .item-detail-name {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.item-detail .item-detail-contents .item-detail-main {
+  margin: 20px auto 0;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-photo {
+  background-color: #fafafa;
+  float: left;
+  height: 375px;
+  width: 290px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-photo .photo-main {
+  display: block;
+  margin: 0 auto;
+  height: 270px;
+  width: 220px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-photo .photo-sub {
+  height: 80px;
+  width: 70px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table {
+  float: right;
+  width: 290px;
+  font-size: 14px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table th {
+  width: 39%;
+  text-align: left;
+  background-color: #fafafa;
+  border: solid 1px whitesmoke;
+  padding: 8px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td {
+  width: 61%;
+  border: solid 1px whitesmoke;
+  padding: 8px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td .item-detail-evaluation {
+  margin: 8px 10px 0 0;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td .item-detail-evaluation .laugh {
+  color: pink;
+  font-size: 16px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td .item-detail-evaluation .meh {
+  color: orange;
+  font-size: 16px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td .item-detail-evaluation .frown {
+  color: lightblue;
+  font-size: 16px;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td .item-detail-category {
+  display: block;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td a {
+  color: blue;
+}
+
+.item-detail .item-detail-contents .item-detail-main .item-detail-table td a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.item-detail .item-detail-contents .item-detail-price-box {
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+.item-detail .item-detail-contents .item-detail-price-box .item-detail-price {
+  font-size: 40px;
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+.item-detail .item-detail-contents .item-detail-price-box .item-detail-tax {
+  font-size: 10px;
+}
+
+.item-detail .item-detail-contents .item-detail-price-box .item-detail-postage {
+  font-size: 16px;
+}
+
+.item-detail .item-detail-contents .item-buy-btn {
+  height: 50px;
+  display: block;
+  margin-top: 16px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-detail .item-detail-contents .item-detail-description {
+  padding-top: 32px;
+  font-size: 18px;
+}
+
+.item-detail .item-detail-contents .item-detail-description__sentence {
+  white-space: pre-wrap;
+}
+
+.item-detail .item-detail-contents .item-detail-button {
+  margin-top: 16px;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-left {
+  display: inline-block;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-left__like {
+  padding: 5px 16px;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-left__report {
+  padding: 8px 16px;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-left__report:hover {
+  opacity: 0.7;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-left .item-button {
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 40px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-left .item-button span {
+  margin: 0 0 0 8px;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-right {
+  font-size: 14px;
+  float: right;
+  padding-top: 5px;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-right a {
+  color: blue;
+}
+
+.item-detail .item-detail-contents .item-detail-button .item-detail-button-right a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.item-detail .item-detail-message {
+  background-color: white;
+  width: 642px;
+  margin: 8px auto;
+  padding: 24px;
+}
+
+.item-detail .item-detail-message .message-comments p {
+  font-size: 14px;
+  padding: 8px;
+  background-color: #fff6ed;
+}
+
+.item-detail .item-detail-message .message-comments textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100px;
+  border: 1px solid grey;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 8px;
+  outline: 0;
+}
+
+.item-detail .item-detail-message .message-comments textarea:focus {
+  border: 1px solid #0099e8;
+}
+
+.item-detail .item-detail-message .message-comments .form-submit {
+  box-sizing: border-box;
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  font-size: 14px;
+  margin-top: 8px;
+  background-color: #aaa;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+}
+
+.item-detail .item-links {
+  margin: 24px auto 0;
+  width: 690px;
+}
+
+.item-detail .item-links .angle {
+  font-size: 18px;
+}
+
+.item-detail .item-links .item-link-next {
+  float: right;
+}
+
+.item-detail .item-links a {
+  color: blue;
+}
+
+.item-detail .item-links a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.item-detail .social-media-links {
+  background-color: white;
+  width: 690px;
+  margin: 24px auto;
+  padding: 32px 0;
+}
+
+.item-detail .social-media-links .social-media-boxes {
+  text-align: center;
+}
+
+.item-detail .social-media-links .social-media-box:hover {
+  opacity: 0.7;
+}
+
+.item-detail .social-media-links .fa-facebook-square {
+  color: #385185;
+}
+
+.item-detail .social-media-links .fa-twitter-square {
+  color: #5d9dc9;
+}
+
+.item-detail .social-media-links .fa-pinterest-square {
+  color: #aa262a;
+}
+
+.item-detail .item-image-box {
+  margin: 0 auto;
+  width: 690px;
+}
+
+.item-detail .item-image-box .item-box-head {
+  font-size: 22px;
+  margin: 24px 0 8px;
+  font-weight: bold;
+  color: blue;
+}
+
+.item-detail .item-image-box .item-box-head:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.item-detail .item-image-box .item-box {
+  width: 210px;
+  margin: 0 20px 20px 0;
+  float: left;
+  font-size: 0;
+}
+
+.item-detail .item-image-box .item-box .item-box-photo {
+  height: 210px;
+  width: 210px;
+}
+
+.item-detail .item-image-box .item-box .item-box-body {
+  padding: 16px;
+  background-color: white;
+  color: #333333;
+}
+
+.item-detail .item-image-box .item-box .item-box-body .item-box-name {
+  font-size: 16px;
+}
+
+.item-detail .item-image-box .item-box .item-box-body .item-box-price {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item-detail .item-image-box .item-box a {
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
