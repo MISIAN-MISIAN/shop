@@ -1,13 +1,13 @@
 @extends('posts.layout')
 @section('content')
   <div class="main-top">
-    <div class="advertisemens">
-        <div class="advertisement">
-          <a href="#">
-            <img class="scroll-advertisement" src="https://i.gyazo.com/9192b15b3c92a30aff8772d5b0b12d43.png">
-          </a>
-        </div>
-    </div>
+    <!-- <div class="advertisemens">
+      <div class="advertisement">
+        <a href="#">
+          <img class="scroll-advertisement" src="https://i.gyazo.com/9192b15b3c92a30aff8772d5b0b12d43.png">
+        </a>
+      </div>
+    </div> -->
       
     <div class="nav">
       <h2 class="popularity-category">カテゴリー</h2>

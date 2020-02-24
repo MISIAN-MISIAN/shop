@@ -11026,7 +11026,7 @@ header {
 
 header .header-top {
   padding: 10px 20px;
-  background-color: white;
+  background-color: #9c8f8f;
 }
 
 header .menus {
@@ -11097,8 +11097,9 @@ body {
 
 .nav {
   padding: 50px 0px 30px;
-  background-color: white;
+  background-color: #e92020;
   text-align: center;
+  margin-top: 50px;
 }
 
 .popularity-category {
