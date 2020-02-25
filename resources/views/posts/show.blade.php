@@ -8,6 +8,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+@extends('posts.layout')
   <div class="item-detail">
     <div class="item-detail-contents">
       <h1 class="item-detail-name">アイテム名</h1>
