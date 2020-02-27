@@ -8,7 +8,8 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-@extends('posts.layout')
+@extends('layouts.app')
+@section('content')
   <div class="item-detail">
     <div class="item-detail-contents">
       <h1 class="item-detail-name">アイテム名</h1>
@@ -54,6 +55,6 @@
 
     </div>
   </div>
-  
+@endsection
 </body>
 </html>
