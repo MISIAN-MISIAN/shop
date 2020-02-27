@@ -8,7 +8,8 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-  @extends('posts.layout')
+  @extends('layouts.app')
+  @section('content')
   <main class="main">
     <section class="main__block">
       <h2 class="sell__block__head">スニーカの写真を入力してください</h2>
@@ -40,7 +41,7 @@
             <div class="sell__block__form__btn">
               <div>
                 <btn class="btn-default__btn-red" type="submit">投稿</btn>
-                <a href="#">戻る</a>
+                <a href="/">戻る</a>
               </div>
             </div>
 
@@ -49,5 +50,6 @@
       </div>
     </section>
   </main>
+  @endsection
 </body>
 </html>

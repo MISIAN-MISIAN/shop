@@ -13,7 +13,8 @@
 
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-  <header>
+  
+  <!-- <header>
     <div class="header-top">
       <h1 class="title">shop</h1>
       <ul class="menus">
@@ -21,7 +22,8 @@
         <li class="menu">ログイン</li>
       </ul>
     </div>
-  </header>
+  </header> -->
+
   <body>
     
     
