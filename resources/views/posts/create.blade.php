@@ -16,7 +16,7 @@
       <div class="sell__block__form">
         <div class="sell__block__form__upload">
           <h3 class="sell__block__form__upload__head">
-            食事の画像
+            スニーカの写真
             <span class="require">必須</span>
           </h3>
           <div id="image-box-1">

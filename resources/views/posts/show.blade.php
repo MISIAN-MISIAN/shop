@@ -20,14 +20,14 @@
         <table class="item-detail-table">
           <tbody>
             <tr>
-              <th>出品者</th>
+              <th>投稿者</th>
               <td>
                 <a class="item-detail-username">ユザー名</a>
                 
               </td>
             </tr>
             <tr>
-              <th>カテゴリー</th> 
+              <th>商品名</th> 
               <td>
                 <a class="item-detail-category"></a>
               </td>
@@ -36,12 +36,6 @@
               <th>ブランド</th>
               <td>
                 ブランド名
-              </td>
-            </tr>
-            <tr>
-              <th>商品サイズ</th>
-              <td>
-                サイズ
               </td>
             </tr>
           </tbody>
