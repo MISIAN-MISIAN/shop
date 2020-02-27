@@ -8,6 +8,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+  @extends('posts.layout')
   <main class="main">
     <section class="main__block">
       <h2 class="sell__block__head">スニーカの写真を入力してください</h2>
@@ -36,6 +37,13 @@
                 <input class="form__group__name title" type="text" placeholder="ブランド">
               </div>
             </div>
+            <div class="sell__block__form__btn">
+              <div>
+                <btn class="btn-default__btn-red" type="submit">投稿</btn>
+                <a href="#">戻る</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
