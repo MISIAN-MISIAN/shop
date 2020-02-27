@@ -11251,7 +11251,6 @@ body {
 .item-detail {
   background-color: #fafafa;
   padding: 40px 0;
-  margin-top: 100px;
 }
 
 .item-detail a {
@@ -11592,7 +11591,6 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  margin-top: 100px;
 }
 
 .main .main__block {
