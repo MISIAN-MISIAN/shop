@@ -7,12 +7,15 @@ use App\Http\Controllers\Controller;
 class PostController extends Controller
 {
     public function index(){
-        return view('posts.index');
+        $posts = Post::all();
+        return view('posts.index',['posts' => $posts]);
+        // return view('posts/create',compact('posts'));
     }
 
     public function create(){
-        // $poat = new Post();
+        $post = new Post();
         return view('posts/create');
+        
     }
 
     public function show($id){
