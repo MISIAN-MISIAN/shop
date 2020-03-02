@@ -15,11 +15,15 @@
 //     return view('posts/index');
 // });
 
-Route::get("/","PostController@index");
+//この1行で自動でCRUDに対応するルーティングを設定してくれます。
+Route::resource('/post', 'PostController');
+
+// Route::get("/","PostController@index");
+// Route::get('post/new', 'PostController@new');
+// Route::get('post/{id}', 'PostController@show');
+
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('post/create', 'PostController@create');
-Route::get('post/{id}', 'PostController@show');
 
