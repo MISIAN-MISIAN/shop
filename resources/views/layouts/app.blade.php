@@ -51,7 +51,7 @@
                             @endif
                         @else
                             <div class="nav-item">
-                                <a class="nav-link" href="/post/create">{{ __('投稿') }}</a>
+                                <a class="nav-link" href="/post/new">{{ __('投稿') }}</a>
                             </div>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
