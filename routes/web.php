@@ -16,11 +16,11 @@
 // });
 
 //この1行で自動でCRUDに対応するルーティングを設定してくれます。
-Route::resource('/', 'PostController');
+// Route::resource('/', 'PostController');
 
-// Route::get("/","PostController@index");
+Route::get("/","PostController@index");
 Route::get('post/new', 'PostController@new');
-Route::post('post/create', 'PostController@create')->name('post.create'); // 保存
+Route::post('post', 'PostController@create')->name('post.create'); // 保存
 Route::get('post/create', 'PostController@create')->name('post.create'); // 作成
 Route::get('post/{id}', 'PostController@show');
 
