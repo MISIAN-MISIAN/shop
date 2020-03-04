@@ -53,7 +53,7 @@ class PostController extends Controller
             $post->image = $request->image;
             $post->user_id = $request->user_id;
             $post->save();
-            return redirect('/');
+            return redirect('posts/new');
         }
     }
 
