@@ -23,26 +23,33 @@
         <h3 class="item-title-women">新着アイテム</h3>
 
       </div>
-        
       <div class="holder">
         <div class="items-images">
           <ul class="images">
-            <li class="image">
-              <div class="product">
-                  <a class="product-image" href="#">
-                    <div class="product-card">
-                      <span class="product-price">$ 1000</span>
-                      <img class="product-image-size" src="https://i.gyazo.com/19bbdd578edb5173a80a3c12b088c0ec.png" alt="商品写真">
-                      <div class="product-description">
-                        <span>ワンピース</span>
-                      </div> 
-                    </div>
-                  </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>   
+            @if(count($posts) > 0)
+              @foreach($posts as $post) 
+                <li class="image">
+                  <div class="product">
+                      <a class="product-image" href="#">
+                        <div class="product-card">
+                          <span class="product-price">{{ $post->brand }}</span>
+                          <img class="product-image-size" src="{{ $post->image }}" alt="商品写真">
+                          <div class="product-description">
+                            <span>{{ $post->name }}</span>
+                          </div> 
+                        </div>
+                      </a>
+                  </div>
+                </li>
+              @endforeach
+            @else
+              <div>投稿記事がありません</div>
+            @endif
+              </ul>
+            </div>
+          </div>  
+      
+
     </div>
   </div>
 @endsection
