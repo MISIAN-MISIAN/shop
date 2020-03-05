@@ -51,7 +51,7 @@ class PostController extends Controller
             $post->name = $request->name;
             $post->brand = $request->brand;
             $post->image = $request->image;
-            $post->user_id = $request->user_id;
+            $post->user_id = $request->user()->id;
             $post->save();
             return redirect('/');
         }
