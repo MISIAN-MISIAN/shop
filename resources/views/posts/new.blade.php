@@ -14,7 +14,7 @@
     <section class="main__block">
       <h2 class="sell__block__head">スニーカの写真を入力してください</h2>
       <div class="sell__block__form">
-        <form action="/" method="post">
+        <form action="/post/create" method="post">
           {{ csrf_field() }}
           <!-- value仮入れ(Userモデルとリレーションするのに必要) -->
           <input type="hidden" name="user_id" value="1">

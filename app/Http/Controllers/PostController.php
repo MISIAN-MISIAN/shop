@@ -43,7 +43,7 @@ class PostController extends Controller
         $validator = Validator::make($form, $rules, $message);
 
         if($validator->fails()){
-            return redirect('posts/new')
+            return redirect('post/new')
                 ->withErrors($validator)
                 ->withInput();
         }else{
@@ -53,13 +53,13 @@ class PostController extends Controller
             $post->image = $request->image;
             $post->user_id = $request->user_id;
             $post->save();
-            return redirect('posts/new');
+            return redirect('/');
         }
     }
 
     public function show($id){
         $post = Post::find($id);
-        return view('posts/show',compact('post'));
+        return view('post/show',compact('post'));
     }
 }
 
