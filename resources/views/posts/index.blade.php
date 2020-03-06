@@ -30,7 +30,7 @@
               @foreach($posts as $post) 
                 <li class="image">
                   <div class="product">
-                      <a class="product-image" href="#">
+                      <a class="product-image" href="post/{id}">
                         <div class="product-card">
                           <span class="product-price">{{ $post->brand }}</span>
                           <img class="product-image-size" src="{{ $post->image }}" alt="商品写真">
