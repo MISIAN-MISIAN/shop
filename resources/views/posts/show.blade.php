@@ -10,8 +10,8 @@
 <body>
 @extends('layouts.app')
 @section('content')
-  @if(count($post) > 0)
-    @foreach($post as $p)
+  @if(count($posts) > 0)
+    @foreach($posts as $post)
       <div class="item-detail">
         <div class="item-detail-contents">
           <h1 class="item-detail-name">アイテム名</h1>
@@ -31,13 +31,13 @@
                 <tr>
                   <th>商品名</th> 
                   <td>
-                    <a class="item-detail-category">{{ $p->name }}</a>
+                    <a class="item-detail-category">{{ $post->name }}</a>
                   </td>
                 </tr>
                 <tr>
                   <th>ブランド</th>
                   <td>
-                    {{ $p->brand }}
+                    {{ $post->brand }}
                   </td>
                 </tr>
               </tbody>
