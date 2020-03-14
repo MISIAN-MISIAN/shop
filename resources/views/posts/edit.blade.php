@@ -53,6 +53,7 @@
               </div>
               <div class="sell__block__form__btn">
                 <div>
+                  <!-- <input type="hidden" name="_token" value="{{csrf_token()}}"> -->
                   <input class="btn-default__btn-red" type="submit" value="更新">
                   <a href="/">戻る</a>
                 </div>
