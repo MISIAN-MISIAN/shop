@@ -23,7 +23,8 @@ Route::get('post/new', 'PostController@new');
 Route::post('post/create', 'PostController@create')->name('post.create'); // 保存
 Route::get('post/create', 'PostController@create')->name('post.create'); // 作成
 Route::get('post/show/{id}', 'PostController@show')->name('post.show');
-Routes::get('post/edit/{id}', 'PostController@edit');
+Route::get('post/edit/{id}', 'PostController@edit');
+Route::post('post/update/{id}', 'PostController@update');
 
 
 
