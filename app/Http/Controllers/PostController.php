@@ -59,10 +59,26 @@ class PostController extends Controller
 
     public function show($id){
         $post = Post::find($id);
-        // dd($post);
-        // return view('post/show',compact('post'));
-        // return view('post/show',['post' => Post::findOrFail($id)]);
+        // dd($post);デバックの記載
+        // return view('posts/show',compact('post'));
+        // return view('posts/show',['post' => Post::find($id)]);
         return view('posts/show')->with('post',$post);
+    }
+
+    public function edit($id){
+        $post = Post::find($id);
+        return view('posts/edit')->with('post',$post);
+
+    }
+
+    public function update(Request $request, $id){
+        $post = Post::find($id);
+
+        $post->name = $request->name;
+        $post->brand = $request->brand;
+        $post->image = $request->image;
+        $post->user_id = $request->user()->id;
+        return redirect('/');
     }
 }
 
