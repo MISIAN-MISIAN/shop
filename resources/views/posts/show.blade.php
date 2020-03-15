@@ -43,8 +43,11 @@
           </table>
         </div>
         <div class="item-detail-price-box">
-          <span class="item-detail-price">値段</span>
-          <span class="item-detail-tax">（税込）</span>
+          <!-- <span class="item-detail-price">値段</span>
+          <span class="item-detail-tax">（税込）</span> -->
+          @if( $post->user_id == Auth::id())
+            <a href="/post/edit/{{ $post->id }}">編集</a>
+          @endif
         </div>
 
 
