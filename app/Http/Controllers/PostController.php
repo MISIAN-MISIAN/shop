@@ -59,6 +59,7 @@ class PostController extends Controller
 
     public function show($id){
         $post = Post::find($id);
+        
         // dd($post);デバックの記載
         // return view('posts/show',compact('post'));
         // return view('posts/show',['post' => Post::find($id)]);

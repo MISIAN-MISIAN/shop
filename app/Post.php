@@ -10,4 +10,9 @@ class Post extends Model
     protected $guarded = array('id');
 
     protected $fillable = ['name', 'brand','image'];
+
+
+    public function user(){
+    return $this->belongsTo('App\User');
+    }
 }

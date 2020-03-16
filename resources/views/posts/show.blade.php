@@ -23,7 +23,7 @@
               <tr>
                 <th>投稿者</th>
                 <td>
-                  <a class="item-detail-username">ユザー名</a>
+                  <a class="item-detail-username">{{ $post->user->name }}</a>
                   
                 </td>
               </tr>
