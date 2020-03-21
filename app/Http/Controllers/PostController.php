@@ -82,6 +82,11 @@ class PostController extends Controller
         $post->save();
         return redirect('/');
     }
+
+    public function destroy(Request $request, $id){
+        $post = Post::find($id);
+        return redirect('/');
+    }
 }
 
 ?>

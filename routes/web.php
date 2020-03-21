@@ -25,7 +25,7 @@ Route::get('post/create', 'PostController@create')->name('post.create'); // ä½œæ
 Route::get('post/show/{id}', 'PostController@show')->name('post.show');
 Route::get('post/edit/{id}', 'PostController@edit');
 Route::post('post/update/{id}', 'PostController@update');
-
+Route::delete('post/{id}', 'PostController@destroy')->name('name.destroy');
 
 
 Auth::routes();
