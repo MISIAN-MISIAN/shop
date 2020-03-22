@@ -47,8 +47,10 @@
           <span class="item-detail-tax">（税込）</span> -->
           @if( $post->user_id == Auth::id())
             <a href="/post/edit/{{ $post->id }}">編集</a>
-            <input type="hidden" name="_method" value="DELETE">
-            <input type="submit" class="delete" value="削除">
+            <form method="post" action="/post/{$id}">
+              {{ csrf_field()}}
+                <input name="_method" type="hidden" class="btn-default__btn-red">削除</button>
+            </form>
           @endif
         </div>
 
