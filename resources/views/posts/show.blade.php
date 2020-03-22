@@ -48,9 +48,10 @@
           @if( $post->user_id == Auth::id())
             <a href="/post/edit/{{ $post->id }}">編集</a>
             <form method="post" action="/post/{$id}">
-            <input name="_method" type="hidden" value="削除">
               {{ csrf_field()}}
                 <button type="submit" class="btn-default__btn-red">削除</button>
+                <input name="_method" type="hidden" value="削除">
+                <input type="submit" name="" value="削除する">
             </form>
           @endif
         </div>
