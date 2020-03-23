@@ -49,7 +49,7 @@
             <a href="/post/edit/{{ $post->id }}">編集</a>
             <form method="post" action="/post/{{$post->id}}">
               {{ csrf_field()}}
-                <input name="_method" type="hidden" value="削除">
+                <input name="_method" type="hidden" value="DELETE">
                 <input type="submit" name="" value="削除する">
             </form>
           @endif
