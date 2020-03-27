@@ -29,7 +29,7 @@ class PostController extends Controller
         $rules = [
             'name' => 'required',
             'brand' => 'required',
-            'image' => 'required|max:10240|mimes:jpeg,gif,png',
+            'image' => 'required|max:10240|mimes:jpeg,jpg,gif,png',
             'user_id' => 'integer|required', // 2項目以上条件がある場合は「 | 」を挟む
         ];
         $message = [
