@@ -33,7 +33,7 @@
                       <a class="product-image" href="post/show/{{ $post->id }}">
                         <div class="product-card">
                           <span class="product-price">{{ $post->brand }}</span>
-                          <img class="product-image-size" src="{{ $post->image }}" alt="商品写真">
+                          <img class="product-image-size" src="{ asset (storage/public/{{$post->image}}) }" alt="商品写真">
                           <div class="product-description">
                             <span>{{ $post->name }}</span>
                           </div> 
