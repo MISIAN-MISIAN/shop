@@ -50,7 +50,7 @@ class PostController extends Controller
             unset($form['_token']);
             $post->name = $request->name;
             $post->brand = $request->brand;
-            $post->image = $request->image;
+            $post->image = $request->image->store('public');
             $post->user_id = $request->user()->id;
             $post->save();
             return redirect('/');
