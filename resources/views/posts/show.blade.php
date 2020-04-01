@@ -16,7 +16,7 @@
         <h1 class="item-detail-name">アイテム名</h1>
         <div class="item-detail-main clearfix">
           <div class="item-detail-photo">
-            <img>
+          <img class="product-image-size" src="{{ asset('/storage/'.$post->image) }}" alt="商品写真">
           </div>
           <table class="item-detail-table">
             <tbody>
