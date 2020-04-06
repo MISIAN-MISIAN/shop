@@ -48,7 +48,12 @@
                   @if($errors->has('brand'))
                     <div class="error_msg">{{ $errors->first('brand') }}</div>
                   @endif
-                  <input class="form__group__name title" type="text" name="brand" placeholder="ブランド" value="{{ old('brand') }}">
+                  <select class="form__group__name title" type="text" name="brand" placeholder="ブランド" value="{{ old('brand') }}">
+                    <option>NIKE</option>
+                    <option>adidas</option>
+                    <option>New Balance</option>
+                    <option>その他</option>
+                  </select>
                 </div>
               </div>
               <div class="sell__block__form__btn">

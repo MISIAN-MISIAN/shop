@@ -15,7 +15,7 @@
         <a class="women button" href="#women">NIKE</a>
         <a class="men button" href="#men">adidas</a>
         <a class="appliance button" href="#appliance">New Balance</a>
-        <a class="toy button" href="#toy">その他ブランド</a>
+        <a class="toy button" href="#toy">その他</a>
       </div>
     </div>
     <div class="items-holders" >
