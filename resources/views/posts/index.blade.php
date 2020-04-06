@@ -12,10 +12,10 @@
     <div class="nav">
       <h2 class="popularity-category">カテゴリー</h2>
       <div class="categories">
-        <a class="women button" href="#women">ナイキ</a>
-        <a class="men button" href="#men">アディダス</a>
-        <a class="appliance button" href="#appliance">ニューバランス</a>
-        <a class="toy button" href="#toy">その他</a>
+        <a class="women button" href="#women">NIKE</a>
+        <a class="men button" href="#men">adidas</a>
+        <a class="appliance button" href="#appliance">New Balance</a>
+        <a class="toy button" href="#toy">その他ブランド</a>
       </div>
     </div>
     <div class="items-holders" >
